@@ -40,7 +40,36 @@ input.MyButton:hover {
 color: #bcd4d0;
 background: #3ca392;
 border: 1px solid #fff;
-}</style>
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.image-box {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 440px;
+}
+.image-box img {
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+}
+
+.image-box:hover img {
+    transform: scale(1.1);
+}
+
+</style>
  
 <script src="https://kit.fontawesome.com/3333fb2930.js" crossorigin="anonymous"></script>
 
@@ -56,7 +85,7 @@ border: 1px solid #fff;
                     <a class="nav-link link-black" href="https://DuckMC.github.io/minigames/">Games</a>
                 </li>
                 <li class="nav-item mr-3 ">
-                    <a class="nav-link link-black" href="https://DuckMC.github.io/videos/">Videos</a>
+                    <a class="nav-link link-black" href="https://DuckMC.github.io/videos/">Content</a>
                 </li>
                 <li class="nav-item mr-3 1">
                     <a class="nav-link link-black" href="https://DuckMC.github.io/contact/">Contact</a>
@@ -111,7 +140,7 @@ border: 1px solid #fff;
                     <a class="nav-link" href="https://DuckMC.github.io/minigames/">Games</a>
                 </li>
                 <li class="nav-item mr-3 ">
-                    <a class="nav-link" href="https://DuckMC.github.io/videos/">Videos</a>
+                    <a class="nav-link" href="https://DuckMC.github.io/videos/">Content</a>
                 </li>
                 <li class="nav-item mr-3 1">
                     <a class="nav-link" href="https://DuckMC.github.io/contact/">Contact</a>
@@ -126,147 +155,45 @@ border: 1px solid #fff;
                 <h3 class="h1 display-3 text-white font-weight-700 mb-3" style="line-height: 1;">DUCKMC Network</h3>
                 <p class="font-20 text-white mb-4 font-weight-600">Een minecraft 1.9 t/m 1.12.2 Training, PVP en Minigames server network!</p>
             </div>
+
             <div class="col-md-9 col-lg-6 d-none d-lg-block">
-                <img src="https://i.gifer.com/nS1.gif" alt="DonaldDuck Skin Render" class="w-65">
+                <img src="https://i.gifer.com/nS1.gif" alt="Dog And Cat Run Gif" class="w-65">
             </div>
             </div>
         </div>
     </div>
 </div>
-        <section class="bg-light">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-md-9 col-lg-8 col-xl-7">
-                    <h3 class="display-4 font-weight-700">Wij zijn DuckMC</h3>
-                    <div class="lead mb-5">Welkom op de website van DuckMC. DuckMC is een minecraft server die zich focust op, Training, PVP en andere Minigames. De server is 24/7 online en is te bespelen in 1.9x t/m 1.12x Dus waar wacht je nog op? Speel alleen of met je vrienden op play.duckmc.eu!
-                    <br>
-                    <br>
-                    <input class="MyButton" type="button" value="Copy IP" onclick="AdvancedCopy()">
-</form>
+<br>
+            <div class="row align-items-center justify-content-around text-center text-lg-center">
+                <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
+                    <div>
+                        <h3 class="h2 font-weight-700 mb-4"><br>Wat is DuckMC??</h3>
+                        <p class="lead">DuckMC is een minecraft 1.9 t/m 1.12.2 minecraft server, waarop je populaire en custom minigames kan spelen. De server maakt gebruik van zelgemaakte mappen en custom plugins. <br><br>De DuckMC server is 24/7 online en meer dan 650 unieke spelers (WOW)! Dus waar wacht je nog op? Voeg het ip: play.duckmc.eu toe aan je server-list en join!
+
 <br>
 
-<script>
-function myFunction() {
-  alert("Het ip is succesvol gekopierd!");
-}
-</script>
 
-<script>
-function AdvancedCopy(){
-     //the text that is to be copied to the clipboard
-     var theText = 'play.duckmc.eu';
- 
-     //create our hidden div element
-     var hiddenCopy = document.createElement('div');
-     //set the innerHTML of the div
-     hiddenCopy.innerHTML = theText;
-     //set the position to be absolute and off the screen
-     hiddenCopy.style.position = 'absolute';
-     hiddenCopy.style.left = '-9999px';
- 
-     //check and see if the user had a text selection range
-     var currentRange;
-     if(document.getSelection().rangeCount > 0)
-     {
-          //the user has a text selection range, store it
-          currentRange = document.getSelection().getRangeAt(0);
-          //remove the current selection
-          window.getSelection().removeRange(currentRange);
-     }
-     else
-     {
-          //they didn't have anything selected
-          currentRange = false;
-     }
- 
-     //append the div to the body
-     document.body.appendChild(hiddenCopy);
-     //create a selection range
-     var CopyRange = document.createRange();
-     //set the copy range to be the hidden div
-     CopyRange.selectNode(hiddenCopy);
-     //add the copy range
-     window.getSelection().addRange(CopyRange);
- 
-     //since not all browsers support this, use a try block
-     try
-     {
-          //copy the text
-          document.execCommand('copy');
-     }
-     catch(err)
-     {
-          window.alert("Your Browser Doesn't support this! Error : " + err);
-     }
-     //remove the selection range (Chrome throws a warning if we don't.)
-     window.getSelection().removeRange(CopyRange);
-     //remove the hidden div
-     document.body.removeChild(hiddenCopy);
- 
-     //return the old selection range
-     if(currentRange)
-     {
-          window.getSelection().addRange(currentRange);
-     }
-}
-</script>
-                    
+</p>
+
                     </div>
                 </div>
-            </div>
-
-
-    <section class="bg-light">
-        <div class="container">
-            <div class="row align-items-center justify-content-around text-center text-lg-left">
-                <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
-                    <div>
-                        <h3 class="h1 font-weight-700 mb-4">Over de server:</h3>
-                        <p class="lead">DuckMC bied een unieke en super toffe minecraft ervaring. Op onze minecraft server zijn alle populaire minigames van het moment te vinden! DuckMC werkt met custom plugins en instellingen, daarnaast zorgt het bouwteam wekelijks voor kleine en grote updates in de mappen.</p>
-                    </div>
-                </div>
+                
+                
                 <div class="col-md-9 col-lg-6 col-xl-5 order-lg-1 text-center">
-                    <img class="m-2 img-fluid w-70" src="https://i.imgur.com/pEVGbFW.gif">
-                    <p class="font-18 font-weight-700">play.duckmc.eu</p>
+                    <a href="https://www.youtube.com/watch?v=dfIpibdSPts" target="_blank"> <div class="image-box">
+  <img src="https://i.imgur.com/FzZBbn1.png" alt="Unsplashed Random" width="340" height="348" /></a>
+</div>
+                    <a href="https://www.youtube.com/watch?v=dfIpibdSPts" target="_blank"><br><input class="MyButton" type="button" value="BEKIJK TRAILER" onclick="AdvancedCopy()"></a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-white">
-        <div class="container">
-            <div class="row align-items-center justify-content-around text-center text-lg-left">
-                <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 order-lg-2 pl-lg-5 pl-xl-0">
-                    <div>
-                        <h2 class="h1 font-weight-700 mb-4">Minigames:</h2>
-                        <p class="lead">Speel Skywars, Bedwars, Hide And Seek en unieke andere Training en PVP minigames? Het enige wat je nodig is een minecraft account! 
-                        
-                        <br><a href="https://DuckMC.github.io/minigames/">Meer weten over onze Games? Klik hier!</a>
-                    </div>
-                </div>
-                <div class="col-md-9 col-lg-6 col-xl-5 order-lg-1 text-center">
-                            <img class="rounded mx-auto mb-3" style="border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem; width: 100%;" src="https://i.imgur.com/VFYzYjt.png" alt="Minecraft" title="Minecraft">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-light">
-    <section class="bg-light">
-        <div class="container">
-            <div class="row align-items-center justify-content-around text-center text-lg-left">
-                <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
-                    <div>
-                        <h3 class="h1 font-weight-700 mb-4">Community:</h3>
-                        <p class="lead">DuckMC heeft een hechte en zeer gezellige community waar jij zeker deel van uit wilt maken! Onze community is op meerdere platvormen gevestigd. Je kan onze community onder andere vinden op Minecraft!</p>
-                    </div>
-                </div>
-                <div class="col-md-9 col-lg-6 col-xl-5 order-lg-1 text-center">
-                            <img class="rounded mx-auto mb-3" style="border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem; width: 100%;" src="https://cdn2.pu.nl/media/misc2/minecraft1114131280jpg-5aee61_1280w.jpg" alt="Minecraft" title="Minecraft">
-                </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
+
+
+
+<br><br>
 
 <!-- All JS Here -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -349,7 +276,73 @@ const toast = swal.mixin({
             $('.mobile-nav').toggle();
         });
     </script>
-<center><p>Copyright DuckMC 2020</p></center>
-</body>
+    
+<script>
+function myFunction() {
+  alert("Het ip is succesvol gekopierd!");
+}
+</script>
 
+<script>
+function AdvancedCopy(){
+     //the text that is to be copied to the clipboard
+     var theText = 'play.duckmc.eu';
+ 
+     //create our hidden div element
+     var hiddenCopy = document.createElement('div');
+     //set the innerHTML of the div
+     hiddenCopy.innerHTML = theText;
+     //set the position to be absolute and off the screen
+     hiddenCopy.style.position = 'absolute';
+     hiddenCopy.style.left = '-9999px';
+ 
+     //check and see if the user had a text selection range
+     var currentRange;
+     if(document.getSelection().rangeCount > 0)
+     {
+          //the user has a text selection range, store it
+          currentRange = document.getSelection().getRangeAt(0);
+          //remove the current selection
+          window.getSelection().removeRange(currentRange);
+     }
+     else
+     {
+          //they didn't have anything selected
+          currentRange = false;
+     }
+ 
+     //append the div to the body
+     document.body.appendChild(hiddenCopy);
+     //create a selection range
+     var CopyRange = document.createRange();
+     //set the copy range to be the hidden div
+     CopyRange.selectNode(hiddenCopy);
+     //add the copy range
+     window.getSelection().addRange(CopyRange);
+ 
+     //since not all browsers support this, use a try block
+     try
+     {
+          //copy the text
+          document.execCommand('copy');
+     }
+     catch(err)
+     {
+          window.alert("Your Browser Doesn't support this! Error : " + err);
+     }
+     //remove the selection range (Chrome throws a warning if we don't.)
+     window.getSelection().removeRange(CopyRange);
+     //remove the hidden div
+     document.body.removeChild(hiddenCopy);
+ 
+     //return the old selection range
+     if(currentRange)
+     {
+          window.getSelection().addRange(currentRange);
+     }
+}
+</script>
+    
+</body>
+<br><br><br><center><p>Copyright DuckMC 2020</p></center>
 </html>
