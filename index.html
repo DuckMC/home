@@ -780,25 +780,25 @@ text-align: center;
 
 <script src="https://kit.fontawesome.com/3333fb2930.js" crossorigin="anonymous"></script>
 
-<body>
+<body style="background-color:#245454;">
 <div class="overlay mobile-nav">
 <div class="row p-5 d-flex align-items-center justify-content-center h-100">
 <div class="col-12 text-center">
 <ul class="navbar-nav ml-auto">
 <li class="nav-item mr-3 1">
-<a class="nav-link link-black" href="https://DuckMC.github.io/home/"><h1 style=font-size:200px>Home</h1></a>
+<a class="nav-link link-black" href="https://DuckMC.github.io/home/"><h1 style=font-size:75px>Home</h1></a>
 </li>
 <li class="nav-item mr-3 ">
-<a class="nav-link link-black" href="https://DuckMC.github.io/minigames/"><h1 style=font-size:200px>Games</h1></a>
+<a class="nav-link link-black" href="https://DuckMC.github.io/minigames/"><h1 style=font-size:75px>Games</h1></a>
 </li>
 <li class="nav-item mr-3 ">
-<a class="nav-link link-black" href="https://DuckMC.github.io/cps/"><h1 style=font-size:200px>CPS-Test</h1></a>
+<a class="nav-link link-black" href="https://DuckMC.github.io/cps/"><h1 style=font-size:75px>CPS-Test</h1></a>
 </li>
 <li class="nav-item mr-3 ">
-<a class="nav-link link-black" href="https://DuckMC.github.io/faq/"><h1 style=font-size:200px>FAQ</h1></a>
+<a class="nav-link link-black" href="https://DuckMC.github.io/faq/"><h1 style=font-size:75px>FAQ</h1></a>
 </li>
 <li class="nav-item mr-3 1">
-<a class="nav-link link-black" href="https://DuckMC.github.io/contact/"><h1 style=font-size:200px>Contact</h1></a>
+<a class="nav-link link-black" href="https://DuckMC.github.io/contact/"><h1 style=font-size:75px>Contact</h1></a>
 </li>
 </ul>
 <h1>Op mobiele aparaten kunnen formaten afwijken. <br>Verander naar een pc of zoom uw beeldscherm in. </h1>
@@ -812,7 +812,7 @@ text-align: center;
 <!-- Loading Bar End -->
 <div id="home"></div>
 <!-- Header Section Start -->
-<div class="gradient-1 d-flex align-items-center relative" style="height: 542px;">
+<div class="gradient-1 d-flex align-items-center relative" style="height: 82px;">
 <div class="circle-shape">
 <div class="dot c1 c100"></div>
 <div class="dot c2 c53"></div>
@@ -864,33 +864,311 @@ text-align: center;
 </div>
 </nav>
 </div> </div>
-<div class="container">
-<div class="row justify-content-center text-center">
-<div class="col-md-9 col-lg-8 col-xl-7">
-<br><br>
-<h3 class="h1 display-3 text-white font-weight-700 mb-3" style="line-height: 1;">DUCKMC Network</h3>
-<p class="font-20 text-white mb-4 font-weight-600">Een minecraft 1.8 t/m 1.16 Training, PVP en Minigames server!</p>
 </div>
 
-</div>
-</div>
-</div>
-</div>
+<!-- BEGIN split-slider -->
+<div class="split-slider">
+	<div class="split-slider__placeholder">
+		PLAY.DUCKMC.EU
+	</div>
 
+	<!-- BEGIN slide -->
+	<figure class="slide slide_active slide_wait">
+		<div class="slide__image">
+			<div class="slide__image-part slide__image-part_left"></div>
+			<div class="slide__image-part slide__image-part_right"></div>
+		</div>
+		<figcaption class="slide__caption">
+			<span class="slide__text">DUCKMC</span>
+		</figcaption>
+	</figure>
+	<!--END slide -->
+	
+	<!-- BEGIN slide -->
+	<figure class="slide slide_wait">
+		<div class="slide__image">
+			<div class="slide__image-part slide__image-part_left"></div>
+			<div class="slide__image-part slide__image-part_right"></div>
+		</div>
+		<figcaption class="slide__caption">
+			<span class="slide__text">PVP&PVE</span>
+		</figcaption>
+	</figure>
+	<!--END slide -->
+	
+	<!-- BEGIN slide -->
+	<figure class="slide slide_wait">
+		<div class="slide__image">
+			<div class="slide__image-part slide__image-part_left"></div>
+			<div class="slide__image-part slide__image-part_right"></div>
+		</div>
+		<figcaption class="slide__caption">
+			<span class="slide__text">BUILDING</span>
+		</figcaption>
+	</figure>
+	<!--END slide -->
+	
+	<!-- BEGIN slide -->
+	<figure class="slide slide_wait">
+		<div class="slide__image">
+			<div class="slide__image-part slide__image-part_left"></div>
+			<div class="slide__image-part slide__image-part_right"></div>
+		</div>
+		<figcaption class="slide__caption">
+			<span class="slide__text">PRACTICE</span>
+		</figcaption>
+	</figure>
+	<!--END slide -->
+</div>
+<!-- END split-slider -->
+
+<style>
+.split-slider {
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	background: linear-gradient(105deg,#5dc94f ,#093c94);
+}
+
+	.split-slider__placeholder {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 0.25em;
+		line-height: 1.4;
+		font-size: 4vmax;
+		text-transform: uppercase;
+		letter-spacing: 1ch;
+	}
+
+			.split-slider__placeholder_error {
+				background-color: red;
+}
+
+	.split-slider::before {
+		content: "";
+		display: block;
+		padding-top: calc(9 / 16 * 70%);
+	}
+
+	.split-slider::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.2);
+	}
+
+.slide {
+	margin: 0;
+	opacity: 1;
+	transition: opacity 0.75s;
+}
+
+	.slide__image {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: none no-repeat 50% 50%;
+		background-size: cover;
+}
+
+	.slide__image-part {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 50%;
+		overflow: hidden;
+		background: inherit;
+/* 		animation-timing-function: cubic-bezier(0.51, 0.14, 0.32, 0.96); */
+		animation-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+		.slide__image-part::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 200%;
+			background: inherit;
+		}
+
+		.slide__image-part_left {
+			left: 0;
+			animation-name: toTop;
+		}
+
+			.slide__image-part_left::before {
+					left: 0;
+			}
+
+		.slide__image-part_right {
+			right: 0;
+			animation-name: toBottom;
+		}
+
+			.slide__image-part_right::before {
+				right: 0;
+			}
+
+	.slide__caption {
+		position: absolute;
+		z-index: 1;
+		right:  1em;
+		bottom: 1em;
+		height:      1em;
+		line-height: 1em;
+		overflow: hidden;
+		text-transform: uppercase;
+		text-align: right;
+		font-size: 6vw;
+		letter-spacing: 0.2em;
+	}
+
+	.slide__text {
+		position: relative;
+		top: 100%;
+		display: block;
+		animation: toBottom 1s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+	}
+
+	.slide_active {}
+
+		.slide_active .slide__image-part_left {
+			animation-name: fromBottom;
+		}
+
+		.slide_active .slide__image-part_right {
+			animation-name: fromTop;
+		}
+
+		.slide_active .slide__text {
+			animation-name: fromTop;
+		}
+
+	.slide_wait {
+		opacity: 0;
+	}
+
+		.slide_wait .slide__image-part,
+		.slide_wait .slide__text {
+			animation-duration: 0s;
+		}
+
+@keyframes fromBottom {
+/* 	from { transform: translate3d(0, 100%, 0); }
+	to { transform: translate3d(0, 0, 0); } */
+	from { transform: translate3d(0, 0%, 0); }
+	to { transform: translate3d(0, -100%, 0); }
+}
+
+@keyframes fromTop {
+/* 	from { transform: translate3d(0, -100%, 0); }
+	to { transform: translate3d(0, 0, 0); } */
+	from { transform: translate3d(0, -200%, 0); }
+	to { transform: translate3d(0, -100%, 0); }
+}
+
+@keyframes toBottom {
+/* 	from { transform: translate3d(0, 0, 0); }
+	to { transform: translate3d(0, 100%, 0); } */
+	from { transform: translate3d(0, -100%, 0); }
+	to { transform: translate3d(0, 0%, 0); }
+}
+
+@keyframes toTop {
+/* 	from { transform: translate3d(0, 0, 0); }
+	to { transform: translate3d(0, -100%, 0); } */
+	from { transform: translate3d(0, -100%, 0); }
+	to { transform: translate3d(0, -200%, 0); }
+}
+</style>
+
+<script>
+var urls = [
+	'https://i.imgur.com/fk14gSW.png',
+	'https://i.imgur.com/5G9OQlk.jpg',
+	'https://i.imgur.com/CA0eOFn.jpg',
+	'https://i.imgur.com/RpfXT1W.jpg'
+];
+var placeholder = document.querySelector('.split-slider__placeholder')
+var slides = document.querySelectorAll('.slide');
+var slidesLength = slides.length;
+var currentElem = slides[0];
+var currentIndex = 0;
+
+function loadImage(url) {
+	return new Promise(function(resolve, reject) {
+		var img = new Image();
+		img.onload = function() {
+			img.onload = img.onerror = null;
+			resolve(img);
+		};
+		img.onerror = function(e) {
+			img.onload = img.onerror = null;
+			reject(e);
+		};
+		img.src = url;
+	});
+}
+
+function loadImages(urls) {
+	return Promise.all(urls.map(url => loadImage(url)))
+}
+
+function onError(error) {
+	// placeholder.classList.add('split-slider__placeholder_error');
+	placeholder.innerHTML = `
+		<pre><code>PLAY.DUCKMC.EU</pre></code>`;
+	return error;
+}
+
+function setImagesUrls(images) {
+	slides.forEach((slide, index) => {
+		slide.querySelector('.slide__image')
+			.style.backgroundImage = `url(${images[index].src})`;
+		slide.classList.remove('slide_wait');
+	});
+}
+
+function setActiveSlide(index) {
+	slides[index].classList.add('slide_active');
+	currentElem.classList.remove('slide_active');
+	currentElem = slides[index];
+}
+
+function changeSlide() {
+	currentIndex = (currentIndex + 1 + slidesLength) % slidesLength;
+	setActiveSlide(currentIndex);
+}
+
+function start() {
+	setInterval(changeSlide, 4000);
+}
+
+loadImages(urls)
+	.then(setImagesUrls)
+	.then(start)
+	.catch(onError)
+
+</script>
 <br>
-<div class="row align-items-center justify-content-around text-center text-lg-center">
-<div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
-<div>
-<h3 class="h2 font-weight-700 mb-4"><br>Wij zijn DuckMC! <i class="fas fa-duck"></i></h3>
-<p class="lead">DuckMC is een minecraft minigame server die de beste en leukste minigames in minecraft aanbiedt! Daarnaast is onze server 24/7 online en hebben we al meer dan 1.000 unieke spelers! Dus waar wacht je nog op? Voeg het ip: play.duckmc.eu toe aan je server list en join!
-
 <br>
-
-
-</p>
-
-</div>
-</div>
+       <div class="container">
+            <div class="row align-items-center justify-content-around text-center text-lg-left">
+                <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
+                    <div>
+                        <h2 style="color:#b4c8c8;" class="display-5 font-weight-800 mb-4">Wij zijn DuckMC! <i class="fas fa-duck"></i></h2>
+                        <p style="color:#b4c8c8;" class="font-20">DuckMC is een minecraft server met het grootste aanbod van minigames aanbiedt! Daarnaast is onze server 24/7 online en hebben we al meer dan 1.000 unieke spelers! Dus waar wacht je nog op? Voeg het ip: play.duckmc.eu toe aan je server list en join!</p>
+                    </div>
+                </div>
 
 
 <div class="col-md-9 col-lg-6 col-xl-5 order-lg-1 text-center">
@@ -901,8 +1179,10 @@ text-align: center;
 </div>
 </div>
 </section>
-<br><br>
-<section class="bg-light">
+
+<hr>
+
+<br>
 <div class="container">
 <div class="row">
 <div class="col-lg-6 mb-3">
@@ -919,8 +1199,8 @@ text-align: center;
 <div class="col-lg-6 mb-3">
 <div class="row align-items-center">
 <div class="col">
-<h2 class="h3 font-weight-700">Ontmoet onze community! <i class="fas fa-users"></i></h2> <p class="lead">
-Onze server heeft een groot aantal spelers die zich elke dag weer voor uren kunnen vermaken met ons grote aanbod van games. Onze server heeft veel multiplayer gamemodes die je met onbekende of samen met je vrienden kunt gaan spelen, verbreek jij jouw vrienden hun records?<br>
+<h2 style="color:#b4c8c8;" class="h3 font-weight-700">Ontmoet onze community! <i class="fas fa-users"></i></h2>
+<p style="color:#b4c8c8;" class="lead">Onze server heeft een groot aantal spelers die zich elke dag weer voor uren kunnen vermaken met ons grote aanbod van games. Onze server heeft veel multiplayer gamemodes die je met onbekende of samen met je vrienden kunt gaan spelen, verbreek jij jouw vrienden hun records?<br>
 
 </p> <div class="welcome-content">
 <div class="content"><marquee truespeed="5" >
@@ -1015,7 +1295,9 @@ Onze server heeft een groot aantal spelers die zich elke dag weer voor uren kunn
 </div>
 </section>
 
-<br><br>
+
+
+<hr>
 
 
 <div id="icons">
@@ -1032,13 +1314,15 @@ Onze server heeft een groot aantal spelers die zich elke dag weer voor uren kunn
 </div>
 </div>
 </div>
+
+
 <div class="col-lg-6 mb-3">
 <div class="row align-items-center">
 <div class="col">
-<h2 class="h3 font-weight-700">Speel ook op DuckMC! <i class="fas fa-gamepad"></i></h2>
+<h2 style="color:#b4c8c8;" class="h3 font-weight-700">Speel ook op DuckMC! <i class="fas fa-gamepad"></i></h2>
+<p style="color:#b4c8c8;" >
 
-
-Speel nu samen of alleen Bedwars, Party Games, The Bridge, Village Defense en/of 1 van onze vele andere toffe minigames die op onze server te bespelen zijn! Dan wensen wij jou alvast veel plezier! <br><br>1. Ga in Minecraft naar Multplayer <br>2. Klik op Add Server <br>3. Voer play.duckmc.eu in (zie voorbeeld) en klik daarna op Done <br>4. Selecteer onze server en speel gezellig mee!<img src="https://minecraftskinstealer.com/achievement/2/Achievement+Get%21/Joined+play.duckmc.eu" alt="Minecraft Achievement" /></a>
+Speel nu samen of alleen Bedwars, Party Games, The Bridge, Village Defense en/of 1 van onze vele andere toffe minigames die op onze server te bespelen zijn! Dan wensen wij jou alvast veel plezier! <br><br>1. Ga in Minecraft naar Multplayer <br>2. Klik op Add Server <br>3. Voer play.duckmc.eu in (zie voorbeeld) en klik daarna op Done <br>4. Selecteer onze server en speel gezellig mee!<br><br><img src="https://minecraftskinstealer.com/achievement/2/Achievement+Get%21/Joined+play.duckmc.eu" alt="Minecraft Achievement" /></a>
 
 </p>
 </div>
@@ -1047,11 +1331,12 @@ Speel nu samen of alleen Bedwars, Party Games, The Bridge, Village Defense en/of
 </div>
 </div>
 </section>
+<hr>
+<br>
 </div>
 <center>
 
-<section class="bg-light">
-<h2 class="h2 font-weight-700 mb-4">Our Statistics <i class="fas fa-award"></i></h2>
+<h2 style="color:#b4c8c8;" class="h2 font-weight-700 mb-4">Our Statistics <i class="fas fa-award"></i></h2>
 <div class="row px-5">
 <div class="col-12 mb-4 col-md-4">
 <div class="card shadow-sm text-center border-0 rounder">
@@ -1169,14 +1454,13 @@ document.write(endtags);
 </section>
 
 
-<section class="bg-white">
 <div class="container">
 <div class="row">
 <div class="col-lg-6 mb-3">
 <div class="row align-items-center">
 <div class="col">
-<h1 class="h3 font-weight-700">Hoe werkt voten?</h1>
-<p class="font-16">
+<h1 style="color:#b4c8c8;" class="h3 font-weight-700"><br><br>Hoe werkt voten?</h1>
+<p style="color:#b4c8c8;" class="font-16">
 
 Ga naar de website van NameMC, voor een toffe beloning. Zorg dat je een account hebt op de NameMC website en koppel dit account aan je minecraft account. Mocht je deze stappen voltooid hebben, vind je rechts boven een knop met een grote duim omhoog erop afgebeeld. Klik op deze knop, je eerst volgende keer dat je ons netwerk joint zal je de beloning ontvangen! Als alles goed gegaan in krijg je een bevestiging in de chat.
 
@@ -1190,8 +1474,8 @@ Ga naar de website van NameMC, voor een toffe beloning. Zorg dat je een account 
 <div class="col-lg-6 mb-3">
 <div class="row align-items-center">
 <div class="col">
-<h2 class="h3 font-weight-700">Java editie minecraft</h2>
-<p class="font-16">
+<h2 style="color:#b4c8c8;" class="h3 font-weight-700"><br><br>Java editie minecraft</h2>
+<p style="color:#b4c8c8;" class="font-16">
 
 Java editie is de originele versie van Minecraft! Java Edition kan op meerdere platforms tegelijk gespeeld worden op Windows, Linux en macOS. DuckMC ondersteunt enkel de java version van minecraft en is te bespelen in alle versies (1.8 t/m 1.16). De locatie van onze server is: Frankrijk (Europa).
 <br>
@@ -1380,7 +1664,7 @@ window.getSelection().addRange(currentRange);
 <div class="single_footer single_footer_address">
 <h4>Over Ons</h4>
 <ul>
-<p>DuckMC is een minecraft minigame server die de beste en leukste minigames in minecraft aanbiedt! Daarnaast is onze server 24/7 online en hebben we al meer dan 1.000 unieke spelers! </p>
+<p>DuckMC is een minecraft server met het grootste aanbod van minigames aanbiedt! Daarnaast is onze server 24/7 online en hebben we al meer dan 1.000 unieke spelers! Dus waar wacht je nog op? Voeg het ip: play.duckmc.eu toe aan je server list en join!</p>
 </ul>
 </div>
 </div><!--- END COL -->
